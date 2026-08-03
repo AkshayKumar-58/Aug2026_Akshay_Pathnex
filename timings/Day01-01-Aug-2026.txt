@@ -1,0 +1,44 @@
+Today I've learned about linux commands that are used in our day-to-day life as an devops-cloud engineer 
+mkdir 
+mkdir -p 
+rmdir
+rmdir -p
+rm
+rm -r
+rm -rf
+cp
+scp
+rsync
+mv - use to move files and to rename files and folders
+top
+htop
+du
+df
+free
+head
+tail
+tail -f
+sed
+grep 
+find
+chmod
+usermod
+useradd
+passwd
+sudo su
+su
+wheel - is a sudo group permission in red-hat debain os 
+sudoers or sudo - in amazon linux, ubuntu etc
+umask
+curl ifconfig.me
+ipconfig
+hostname
+
+
+EC2 instance setup 
+like what is key-pair
+what is instance type?
+what is VPC?
+what is Security groups?
+what is NACL?
+what is boot-straping?
