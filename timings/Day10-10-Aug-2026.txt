@@ -1,0 +1,1 @@
+Today We have learned about AWS services such as MongoDB, AWS redshift, AWS Batch, AWS Glue, AWS Snowball, EFS, Elastic Beanstalk, AWS Codepipeline etc
