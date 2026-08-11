@@ -1,0 +1,10 @@
+Today we have learned how to create docker file
+how to create docker image
+how to run image 
+how to make multiple images with the help of docker compose 
+what is docker
+what is image
+what is container
+what is the purpose of giving entry point, ports, RUN, and CMD command
+What are docker registry and how many registry are there
+
