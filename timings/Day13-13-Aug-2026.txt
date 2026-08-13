@@ -1,0 +1,42 @@
+Today I learned how to deploy a cluster along with the versions update like standard and extended version
+So, standard version gives 14 months till auto update to latest version
+whereas extended version gives 26 months or 1 year more than standard version but it is of high costing and after 26 months automatic updates to latest versionToday I learned how to deploy a cluster along with the versions update like standard and extended version
+So, standard version gives 14 months till auto update to latest version
+whereas extended version gives 26 months or 1 year more than standard version but it is of high costing and after 26 months automatic updates to latest version.
+
+Launching a EKS cluster
+1. Configure your cluster such as - Configuration optionns(Auto mode and custom configuration)
+
+2. Enable or Disable Auto mode for EKS
+
+3. Name your cluster
+
+4. Apply role with proper policies
+
+5. Select K8s version with standard or extended support
+
+6. Control plane configuration
+
+7. Cluster Access
+
+8. Cluster Authentication mode (EKS API and ConfigMap)
+
+9. Envelope encryption with KMS
+
+10. ARC Zonal Shift to shift application traffic away from an impaired AZ in your EKS Cluster
+
+11. Select Networking like VPC and subnets minimum 2 for Availablity zone
+
+12. Select Security group
+
+13. Select IP address type
+
+14. Cluster endpoint access (public, private or both)
+
+15. Select Control plane egress
+
+16. Add Plugins that are required for DNS, networking, communication, volume(ebs, efs) drivers, etc
+
+17. Select versions for plugin add-ons
+
+18. 
