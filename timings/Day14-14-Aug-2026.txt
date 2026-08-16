@@ -1,0 +1,5 @@
+
+Today I learned about Plugins of kubernetes cluster and how to upgrage your control plane to the latest changes 
+So, along with it i also learned all the AWS services and how to create your own infrastructure
+hoping to learn ansible and terrafrom for automation
+After that, I learned about Maven build tool, tomcat web application tool and Sonarqube code reviewer and code coverage tool for automate
