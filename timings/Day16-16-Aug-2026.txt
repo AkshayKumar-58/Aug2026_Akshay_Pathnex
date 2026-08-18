@@ -1,0 +1,7 @@
+Today We learn to deploy our pods and cluster using terraform 
+in which we describe our variables.tf output.tf and parameter store credentials
+Along with it we deploy database and volume in 3 different pods of 5gb each
+creating yaml file and deploying cluster with pod specification 
+in stateful state
+pod affinity
+types of pull policy in pulling images from container registry which is always, if not present and never 
