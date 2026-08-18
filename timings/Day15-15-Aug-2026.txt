@@ -1,0 +1,7 @@
+Today i have learned about troubleshooting your control plane and upgrading your eks cluster
+Launching your eks cluster with custom configuration 
+Troubleshooting communication access in networking by adding both the security groups access to your server
+along with pull policy
+then node affinity
+namespacing labels
+what is node affinity
