@@ -1,0 +1,4 @@
+Today I have learned about HELM and HELM chart which is like a package manager for kubernetes cluster 
+HELM has all the information about the kubernetes cluster configuration upgradation parameter store
+it is just like a yum apt brew chocklatey
+

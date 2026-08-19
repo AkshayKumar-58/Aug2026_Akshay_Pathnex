@@ -1,0 +1,5 @@
+Today I have learned about sonar nexus
+which is a artifact repo where we store packages and dependencies
+how to install it
+how to configure credentials in settings.xml
+and url in pom.xml of distribution management
