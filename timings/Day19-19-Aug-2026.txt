@@ -1,0 +1,6 @@
+Today i have learned about argo CD
+which is to automate our kubernetes cluster
+it connects with the git repository that has all configuration of kubernetes whether you want to make more replicas or update a pod or service 
+It synchronize with the git repo update
+It has 4 components 
+api server which is a entry point 

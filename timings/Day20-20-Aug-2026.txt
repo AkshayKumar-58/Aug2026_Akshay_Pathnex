@@ -1,0 +1,3 @@
+Today we have learned about terraform which is a IAC(Infrastructure as a Code) that automates creation updating and deleting resources of cloud providers developed by Hashicorp 
+you can use any cloud providers
+store in a terraform file

@@ -1,0 +1,10 @@
+Today we have learned about terrafrom commands 
+such as terraform init
+terraform plan
+terraform apply
+terraform validate
+terraform destroy
+terraform import
+terraform state
+state lock 
+etc
