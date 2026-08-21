@@ -1,0 +1,129 @@
+# Day 21 
+
+- name: Deploy app from Git for Pathnex
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Install git
+      yum:
+        name: git
+        state: present
+
+    - name: Clone repository
+      git:
+        repo: "https://github.com/pathnex/app.git"
+        dest: "/opt/pathnex-app"
+
+
+# Terraform — RDS Skeleton (MySQL)
+
+resource "aws_db_instance" "PathnexRDS" {
+  allocated_storage      = 20
+  engine                 = "mysql"
+  instance_class         = "db.t3.micro"
+  username               = "admin"
+  password               = "Pathnex123"
+  skip_final_snapshot    = true
+}
+
+
+# Kubernetes — Deployment Rolling Update (Detailed)
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pathnex-rollout
+spec:
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 2
+      maxUnavailable: 1
+  selector:
+    matchLabels:
+      app: rollout
+  template:
+    metadata:
+      labels:
+        app: rollout
+    spec:
+      containers:
+        - name: app
+          image: nginx
+
+
+# Shell Script — Check Internet Connectivity
+
+#!/bin/bash
+
+ping -c 2 google.com &> /dev/null
+
+if [ $? -eq 0 ]; then
+  echo "Internet is available"
+else
+  echo "No internet connection"
+fi
+
+
+
+# Multi-Environment Pipeline
+
+# Jenkins Pipeline — Deploy to Multiple Environments
+
+
+pipeline {
+    agent any
+    environment {
+        INSTITUTE_NAME = "Pathnex"
+    }
+    stages {
+        stage('Deploy to Dev') {
+            steps {
+                sh 'echo "Deploying $INSTITUTE_NAME to Dev environment"'
+            }
+        }
+        stage('Deploy to Staging') {
+            steps {
+                input message: "Approve Staging Deployment?"
+                sh 'echo "Deploying $INSTITUTE_NAME to Staging environment"'
+            }
+        }
+        stage('Deploy to Prod') {
+            steps {
+                input message: "Approve Prod Deployment?"
+                sh 'echo "Deploying $INSTITUTE_NAME to Prod environment"'
+            }
+        }
+    }
+}
+
+# GitLab CI — Multi-Environment
+
+
+stages:
+  - deploy
+
+variables:
+  INSTITUTE_NAME: "Pathnex"
+
+deploy-dev:
+  stage: deploy
+  image: alpine:latest
+  script:
+    - echo "Deploying $INSTITUTE_NAME to Dev environment"
+
+deploy-staging:
+  stage: deploy
+  image: alpine:latest
+  script:
+    - echo "Deploying $INSTITUTE_NAME to Staging environment"
+  when: manual
+
+deploy-prod:
+  stage: deploy
+  image: alpine:latest
+  script:
+    - echo "Deploying $INSTITUTE_NAME to Prod environment"
+  when: manual
