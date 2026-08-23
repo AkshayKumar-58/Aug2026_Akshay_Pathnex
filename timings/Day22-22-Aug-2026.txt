@@ -1,0 +1,4 @@
+Today i have learned about ansible
+it is an automation tool which is used to configuration management, application management and task automation
+It consists of ansible file, modules, playbook and execute it is written in yaml(Yet Another Markup-language)
+with the help of playbook command you can trigger it 
