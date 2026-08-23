@@ -1,0 +1,2 @@
+Today we have learned about CI/CD
+Jenkins and gitlab CI/CD along with github actions
