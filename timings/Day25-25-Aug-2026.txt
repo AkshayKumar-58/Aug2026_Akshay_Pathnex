@@ -1,0 +1,2 @@
+Today i have learned about monitoring tools such as DataDog, Prometheus and grefana 
+to check metrics and create dashboards
