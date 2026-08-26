@@ -1,0 +1,2 @@
+Today i have leanred about elk stack(Elastic search, logstash, kibana) logstash collects logs from different  server, applications and processes. Elastic serarch collects the logs and we can search easily in that with the help of kibana you can transform logs into dashboards and charts 
+
