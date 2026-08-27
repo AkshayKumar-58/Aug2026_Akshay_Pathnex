@@ -1,0 +1,3 @@
+Today I have learned about kafka which is, a distributed streaming platform for high throughput, fault tolerance and real-time data feeds.
+And its architecutre consists of producer, consumer, broker, topic, partition, zookeeper, kafka connect, kafka streams
+
